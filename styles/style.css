@@ -1,1 +1,185 @@
-/* место для вашего кода */
+.body {
+    background-color: #c28b8b;
+}
+
+body > * {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+main, 
+footer
+{
+    background-color: #FFFFFF;
+}
+
+
+.header {
+    background-color: #FFFFFF;
+    height: 293px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.menu__list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.menu__item {
+}
+
+.menu__link {
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: none;
+}
+.menu__link:hover { text-decoration: underline; }
+
+.contacts p{
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.contacts {
+    max-width: 240px;
+}
+
+
+.logo {
+    width: 13%;
+}
+
+.logo__image {
+    display: block;
+    width: 148px;
+    height: 105px;
+}
+
+.cover {
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(../images/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 757px;
+    display: flex;
+}
+
+.overlay {
+    width: 100%;
+}
+
+.cover__title {
+    color: #FFFFFF;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 115%;
+    letter-spacing: 0.3em; /* по макету большое межбуквенное */
+    text-transform: uppercase;
+}
+
+.title-left { text-align: left; margin-top: 165px; margin-left: 10px; }
+.title-center { text-align: center; margin-top: 20px;}
+.title-right { text-align: right; margin-top: 20px; margin-right: 10px;}
+
+.cover__footer {
+    margin-top: 115px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cover__subtitle {
+    color: #FFFFFF;
+    font-style: regular;
+    font-weight: 400;
+    font-size: 22px;
+    text-transform: uppercase;
+    word-spacing: 15px;
+    letter-spacing: 0.12em;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 32px;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 35px;
+}
+
+.button_primary { background: transparent; }
+
+/* Lots */
+
+.lots {
+    background-color: #FFFFFF;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 90px 0 27px;
+}
+
+.lots__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.lot-card {
+    min-height: 450px;
+    background:
+      linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+      var(--lot-bg) center/cover no-repeat;
+    position: relative;
+    padding: 50px 40px;
+}
+
+.lot-card__link { color: #FFFFFF; text-decoration: none; display: block; height: 100%; }
+.lot-card__title { font-weight: 700; font-size: 22px; text-transform: uppercase; text-decoration: underline; margin-bottom: 20px; }
+.lot-card__text { font-size: 20px;}
+
+.lots__more { display: inline-block; margin-top: 30px; font-size: 20px; text-decoration: underline; }
+
+/* About */
+.about { display: grid; grid-template-columns: 240px 1fr; gap: 72px; align-items: start; margin-top: 180px; }
+.about__logo-circle { width: 240px; height: 240px; border-radius: 50%; background: #000; display: grid; place-items: center; }
+.about__logo-image { width: 148px; }
+.about__text { display: grid; gap: 25px; margin-top: 24px; font-size: 20px; line-height: 24px; }
+
+/* Footer */
+.footer { display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: start; gap: 20px; padding: 180px 0 88px; }
+.contacts_footer p { text-align: left; margin-left: 50px;}
+.footer__menu-list { justify-content: center; }
+.socials { list-style: none; display: flex; gap: 48px; justify-content: end; margin-right: 50px;}
+
+.lot-card__link {
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.lot-card__text {
+    font-size: 20px;
+    margin-top: auto; /* это прижмет текст к низу */
+}
+
